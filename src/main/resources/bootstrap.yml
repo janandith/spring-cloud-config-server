@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/janandith/spring-cloud-demo-repo.git
+          clone-on-start: true
+
+server:
+  port: 8888
+
+logging:
+  level:
+    org:
+      springframework: info
